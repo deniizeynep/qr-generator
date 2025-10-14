@@ -1,24 +1,31 @@
 .btnConvert {
- display: flex;
- align-items: center;
- gap: 10px;
- font-size: 13px;
- font-weight: bold;
- background-color: #e0e8ef;
- border-style: solid;
- border-color: #ffffff55;
- border-radius: 40px;
- padding: 10px 20px;
- transform: translate(0px, 0px) rotate(0deg);
- transition: 0.2s;
- box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px #5f9de77a;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 60px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #e0e8ef;
+  border-style: solid;
+  border-color: #ffffff55;
+  border-radius: 40px;
+  padding: 10px 20px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
 }
 
 .btnConvert:hover {
- background-color: #E5EDF5;
- box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px #5f9de77a;
+  cursor: pointer;
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px #5f9de77a;
 }
 
 .btnConvert:active {
- box-shadow: none;
+  box-shadow: none;
+}
+
+@media (max-width : 768px){
+    .btnConvert{
+        margin: 0;
+    }
 }
