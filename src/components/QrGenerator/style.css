@@ -1,13 +1,21 @@
-.title{
+.box {
+  border: 2px dashed #aaa;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #f9f9f9;
 }
 
-.box{
-    border: 2px dashed #aaa;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    background-color: #f9f9f9;
+@media (max-width: 768px) {
+  .box {
+    width: 250px;
+    height: 250px;
+  }
+  .qr-wrapper canvas {
+    width: 230px !important;
+    height: 230px !important;
+  }
 }

@@ -4,10 +4,12 @@ import { QRCodeCanvas } from "qrcode.react";
 export default function QrGenerator({ qrValue }) {
   return (
     <div>
-      <h3 className="title">Qr Generator</h3>
+      <h3>Qr Generator</h3>
       <div className="box">
         {qrValue ? (
-          <QRCodeCanvas value={qrValue} size={400} />
+          <div className="qr-wrapper">
+            <QRCodeCanvas value={qrValue} size={380} />
+          </div>
         ) : (
           <p>{qrValue}</p>
         )}
