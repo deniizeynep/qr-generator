@@ -1,0 +1,7 @@
+.themeBtn {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  transition: 0.2s ease all;
+}

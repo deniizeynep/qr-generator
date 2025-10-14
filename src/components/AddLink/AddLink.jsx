@@ -3,7 +3,7 @@ import "./style.css";
 export default function AddLink({ link, setLink }) {
   return (
     <div>
-      <h3 className="title">Please enter the link you want to convert</h3>
+      <h3>Please enter the link you want to convert</h3>
       <input
         type="text"
         autocomplete="off"
